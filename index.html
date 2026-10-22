@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Count down to your next milestone with this simple, elegant countdown timer."
+    />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <section class="timer-card" aria-labelledby="page-title">
+        <div class="eyebrow">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          A moment worth waiting for
+        </div>
+
+        <h1 id="page-title">
+          <span class="calendar-icon" aria-hidden="true">🗓️</span>
+          Countdown Timer
+        </h1>
+        <p class="subtitle">Every second brings you closer to your goal.</p>
+
+        <div class="timer" id="timer" aria-label="Time remaining">
+          <div class="time-unit">
+            <span class="time-value" id="days">00</span>
+            <span class="time-label">Days</span>
+          </div>
+          <span class="time-separator" aria-hidden="true">:</span>
+          <div class="time-unit">
+            <span class="time-value" id="hours">00</span>
+            <span class="time-label">Hours</span>
+          </div>
+          <span class="time-separator" aria-hidden="true">:</span>
+          <div class="time-unit">
+            <span class="time-value" id="minutes">00</span>
+            <span class="time-label">Minutes</span>
+          </div>
+          <span class="time-separator" aria-hidden="true">:</span>
+          <div class="time-unit">
+            <span class="time-value" id="seconds">00</span>
+            <span class="time-label">Seconds</span>
+          </div>
+        </div>
+
+        <p class="completion-message" id="completion-message" role="status" hidden>
+          🎉 Time's Up! The countdown has ended.
+        </p>
+
+        <div class="target-date">
+          <span class="target-label">COUNTING DOWN TO</span>
+          <time id="target-date"></time>
+        </div>
+      </section>
+
+      <footer>Designed with <span aria-label="love">❤️</span> using HTML, CSS &amp; JavaScript</footer>
+    </main>
+  </body>
+</html>
